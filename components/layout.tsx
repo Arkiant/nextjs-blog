@@ -6,7 +6,13 @@ import Link from "next/link";
 const name = "Arkiant";
 export const siteTitle = "Next.js Blog Site";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
